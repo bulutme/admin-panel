@@ -1,7 +1,7 @@
-import Students from "../../assests/images/cardStudents.svg";
-import Bookmark from "../../assests/images/cardBookmark.svg";
-import Payments from "../../assests/images/cardPayments.svg";
-import Users from "../../assests/images/cardUsers.svg";
+import Students from "../assests/images/cardStudents.svg";
+import Bookmark from "../assests/images/cardBookmark.svg";
+import Payments from "../assests/images/cardPayments.svg";
+import Users from "../assests/images/cardUsers.svg";
 
 export const cards = [
   {

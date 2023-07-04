@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import React from "react";
-import { cards } from "./constants";
+import { cards } from "../../constants/constants";
 import Card from "@/components/Card";
 import styles from "./Home.module.scss";
 
