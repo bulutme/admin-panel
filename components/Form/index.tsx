@@ -40,7 +40,7 @@ const schema = yup
 const Form = ({ onSubmit }: FormProps) => {
   const { selectedImage, singleUser } = useContext(Context);
 
-  const { control, handleSubmit, reset } = useForm<FormDataProps>({
+  const { control, handleSubmit, reset } = useForm<any>({
     resolver: yupResolver(schema),
   });
 
