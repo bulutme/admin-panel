@@ -5,7 +5,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import styles from "./Form.module.scss";
 import ImageUploader from "../ImageUploader";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Context } from "@/contexts";
 
 export interface FormDataProps {
@@ -40,18 +40,19 @@ const schema = yup
 const Form = ({ onSubmit }: FormProps) => {
   const { selectedImage, singleUser } = useContext(Context);
 
-  const { control, handleSubmit } = useForm<FormDataProps>({
+  const { control, handleSubmit, reset } = useForm<FormDataProps>({
     resolver: yupResolver(schema),
-    values: {
-      company: singleUser?.company.name,
-      domain: singleUser?.domain,
-      name: singleUser
-        ? singleUser?.firstName + " " + singleUser?.lastName
-        : "",
-      email: singleUser?.email,
-      phone: singleUser?.phone,
-    },
   });
+
+  useEffect(() => {
+    if (singleUser) {
+      reset({
+        ...singleUser,
+        company: singleUser.company.name,
+        name: `${singleUser.firstName} ${singleUser.lastName}`,
+      });
+    }
+  }, [singleUser]);
 
   const [sendErrorToUploader, setSendErrorToUploader] =
     useState<boolean>(false);
