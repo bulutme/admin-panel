@@ -1,0 +1,33 @@
+.card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  min-width: 255px;
+
+  .text {
+    margin-top: 15px;
+  }
+
+  .info {
+    margin-top: 10px;
+    width: 100%;
+    text-align: end;
+  }
+}
+
+.students {
+  background-color: #f0f9ff;
+}
+
+.bookmark {
+  background-color: #fef6fb;
+}
+
+.payments {
+  background-color: #fefbec;
+}
+
+.users {
+  background: linear-gradient(134deg, #feaf00 0%, #f8d442 100%);
+}

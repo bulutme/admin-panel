@@ -1,0 +1,41 @@
+.imageUploader {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background-color: #f1f0ef;
+  border: 1px solid #f1f0ef;
+  width: 100%;
+  border-radius: 8px;
+  height: 56px;
+
+  .dropzone {
+    cursor: pointer;
+    word-wrap: break-word;
+    font-size: 10px;
+    color: var(--text-secondary-color);
+  }
+
+  .preview {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .previewImage {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+    }
+
+    span {
+      cursor: pointer;
+    }
+  }
+}
+
+.isError {
+  border-color: var(--text-tertiary-color);
+  .dropzone {
+    color: var(--text-tertiary-color);
+  }
+}

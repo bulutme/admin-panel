@@ -1,0 +1,19 @@
+.button {
+  background-color: var(--text-tertiary-color);
+  outline: none;
+  padding: 13px 0;
+  display: block;
+  border: 1px solid var(--text-tertiary-color);
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
+  color: var(--color-white);
+  width: 100%;
+}
+
+.button:hover {
+  border: 1px solid var(--text-tertiary-color);
+  background-color: var(--color-white);
+  color: var(--text-tertiary-color);
+}

@@ -1,0 +1,46 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  .body {
+    position: relative;
+
+    display: flex;
+
+    flex: 1;
+
+    flex-direction: column;
+
+    background-color: #fdfdfd;
+
+    .header {
+      position: fixed;
+      z-index: 101;
+
+      top: 0;
+      right: 0;
+
+      left: 270px;
+    }
+
+    .main {
+      display: flex;
+      flex: 1;
+
+      flex-direction: column;
+
+      margin-top: 60px;
+      padding-left: 270px;
+    }
+  }
+
+  .sidebar {
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    width: 270px;
+    height: 100%;
+  }
+}

@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --color-white: #ffffff;
+
+  --text-primary-color: #000;
+  --text-secondary-color: #6c6c6c;
+  --text-tertiary-color: #feaf00;
+  --text-fourthiary-color: #e5e5e5;
+
+  --header-large-size: 30px;
+  --header-large-line-height: 1.2;
+  --header-large-font-weight: bold;
+
+  --header-base-size: 28px;
+  --header-base-line-height: 1.4;
+  --header-base-font-weight: bold;
+
+  --header-small-size: 22px;
+  --header-small-line-height: 1.2;
+  --header-small-font-weight: bold;
+
+  --body-base-size: 16px;
+  --body-base-line-height: 1.5;
+  --body-base-font-weight: normal;
+
+  --body-large-size: 18px;
+  --body-large-line-height: 1.5;
+  --body-large-font-weight: bold;
+
+  --body-small-size: 14px;
+  --body-small-line-height: 1.2;
+  --body-small-font-weight: normal;
+
+  --subtext-size: 12px;
+  --subtext-line-height: 1.5;
+  --subtext-font-weight: normal;
+}
+
+.home {
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+}
